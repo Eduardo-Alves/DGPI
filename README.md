@@ -9,7 +9,7 @@ DGPI offline (local) version is now available for FREE!!!
 
 This project consists in study of GPI anchors connecting certain proteins to the celulle's membrane and more particularly to the detection of the candidates proteins to a GPI anchorage. In the first stage, it acts to test some criterion (rules) on proteins from the SWISS-prot database and in the second stage, to classify automatically proteins which we know only the sequence.
 
-The work statement is available <a href=https://github.com/Eduardo-Alves/DGPI/blob/master/enonce_veuthey-B.html>here</a>
+The work statement is available <a href=https://github.com/Eduardo-Alves/DGPI/blob/master/enonce_veuthey-B.md>here</a>
 
 The results obtained currently are satisfactory. The program can be tested under "DGPI Demo" in the navigation bar.
 This work is currently completed and obtained a note of 6/6 (this projet is referred in Expasy under "tools"). A continuation of the project is considered.
