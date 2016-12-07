@@ -1,0 +1,133 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Julien Kronegg">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+   <title>DGPI v2.04 Manuel d'utilisation</title>
+</head>
+<body>
+&nbsp;
+<table COLS=1 WIDTH="600" >
+<tr>
+<td>
+<h1>
+<img SRC="gpi-anchor_ico.jpg" height=45 width=48> DGPI v2.04</h1>
+
+<h2>
+Manuel d'utilisation</h2>
+
+<p><br>DGPI v2.04 propose deux modes de fonctionnements :&nbsp;
+<ul>
+<li>
+avec interface graphique;</li>
+
+<li>
+avec interface texte sur la ligne de commande.</li>
+</ul>
+
+<h3>
+Mode graphique</h3>
+Le mode graphique permet d'entrer une s&eacute;quence de prot&eacute;ine
+sous trois diff&eacute;rentes formes :
+<ul>
+<li>
+access number;</li>
+
+<li>
+entry name;</li>
+
+<li>
+s&eacute;quence d'acides amin&eacute;s.</li>
+</ul>
+La prot&eacute;ine est entr&eacute;e dans la bo&icirc;te de texte pr&eacute;sent&eacute;e
+ci-dessous. Pour traiter la prot&eacute;ine, il suffit ensuite de cliquer
+sur le bouton Submit.
+<center>
+<p><img SRC="dgpi_graphique.gif" height=107 width=385></center>
+
+<p>Le r&eacute;sultat de l'analyse par DGPI est pr&eacute;sent&eacute;e
+sous forme graphique dans la partie inf&eacute;rieure de la fen&ecirc;tre
+de soumission.
+<br>Il est possible de soumettre plusieurs prot&eacute;ines &agrave; la
+suite, puis de naviguer entre les diff&eacute;rents r&eacute;sultats en
+utilisant les boutons "Back" et "Forward".
+<br>&nbsp;
+<br>&nbsp;
+<h3>
+Mode texte</h3>
+Le mode texte permet de traiter des prot&eacute;ines en mode batch, ce
+qui permet d'int&eacute;grer DGPI dans une cha&icirc;ne de traitement automatique
+de prot&eacute;ines. Le mode texte a &eacute;galement l'avantage de permettre
+l'utilisation de prot&eacute;ines au format FASTA.
+<p>La syntaxe pour le mode texte est la suivante :
+<p><tt>dgpi [-file=&lt;file_name> [-output=HTML|text]] [-h] [-q]</tt>
+<p>La signification des options est la suivante :&nbsp;
+<blockquote><tt>-q&nbsp;&nbsp;&nbsp;&nbsp; </tt>: quiet mode (seuls les
+messages d'erreur sont affich&eacute;s)
+<br><tt>-h</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+affiche l'aide
+<br><tt>-output</tt>: format de sortie HTML ou texte (HTML par d&eacute;faut)
+<br><tt>-file</tt>&nbsp;&nbsp;&nbsp; : traite la prot&eacute;ine contenue
+dans le fichier sp&eacute;cifi&eacute;. Le
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+r&eacute;sultat est stock&eacute; dans <tt>&lt;file_name>.html </tt>ou<tt>
+.txt</tt>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+si la sortie texte est choisie</blockquote>
+
+<p><br>Le fichier sp&eacute;cifi&eacute; par l'option <tt>-file</tt> peut
+contenir une prot&eacute;ine dans diff&eacute;rents formats :
+<ul>
+<li>
+access number;</li>
+
+<li>
+entry name;</li>
+
+<li>
+s&eacute;quence d'acides amin&eacute;s;</li>
+
+<li>
+prot&eacute;ine au format FASTA.</li>
+</ul>
+Le format FASTA utilis&eacute; dans DGPI ne poss&egrave;de pas toutes les
+fonctionnalit&eacute;s du format FASTA courant. Les fonctionalit&eacute;s
+suivantes ne sont pas support&eacute;es par DGPI :
+<ul>
+<li>
+plusieurs prot&eacute;ines dans un fichier;</li>
+
+<li>
+acides amin&eacute;s non conventionnels (support&eacute;s : les 20 de base,
+X, B, U et Z);</li>
+
+<li>
+l'access number de la prot&eacute;ine doit &ecirc;tre dans la premi&egrave;re
+ligne des caract&egrave;res 4 &agrave; 10.</li>
+</ul>
+Un exemple de chaque format accept&eacute; par DGPI pour le mode texte
+est fourni. Ces fichiers s'appellent <tt>example_*_format.txt</tt> (* remplace
+une cha&icirc;ne de caract&egrave;res quelconque).
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr WIDTH="100%">
+<table COLS=2 WIDTH="100%" >
+<tr>
+<td><font size=-2>DGPI v2.04 Manuel d'utilisation</font>
+<br><font size=-2>http://dgpi.pathbot.com/</font>
+<br><font size=-2>email : dgpi@bigfoot.com</font></td>
+
+<td>
+<div align=right><font size=-2>18 ao&ucirc;t 2000</font></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

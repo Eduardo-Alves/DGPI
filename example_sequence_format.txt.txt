@@ -1,0 +1,22 @@
+N-term Signal :
+  there is a N-term signal   (1..33)
+  maximal score=11.89
+
+C-term Hydrophobicity profile :
+  hydrophobe length (low-pass filter)=21
+  hydrophile length (low-pass filter)=1
+  hydrophobe length (median filter)=16
+  hydrophile length (median filter)=19
+  average hydrophobe length = 18.5
+  average hydrophile length = 10.0
+
+Cleavage site (w) :
+  There's a GPI-anchor near 604  (7 aa after hydrophobic tail)
+  There's a potential cleavage site at 604 (score=0.344) detected by w, w+2 rule.
+  The best cleavage site is 604
+
+Conclusion :
+  This protein is GPI-anchored (signal, hydrophobic & hydrophilic tail present).
+  There is a potential cleavage site at 604 (w, w+1, w+2)
+
+

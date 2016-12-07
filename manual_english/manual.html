@@ -1,0 +1,131 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Julien Kronegg">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+   <title>DGPI v2.04 User manual</title>
+</head>
+<body>
+&nbsp;
+<table COLS=1 WIDTH="600" >
+<tr>
+<td>
+<h1>
+<img SRC="gpi-anchor_ico.jpg" height=45 width=48> DGPI v2.04</h1>
+
+<h2>
+User manual</h2>
+
+<p><br>DGPI v2.04 proposes two operating modes:&nbsp;
+<ul>
+<li>
+with graphic interface;</li>
+
+<li>
+with text interface (on the command line).</li>
+</ul>
+
+<h3>
+Graphic mode</h3>
+The graphic mode makes it possible to enter a protein sequence in three
+various forms:
+<ul>
+<li>
+access number;</li>
+
+<li>
+entry name;</li>
+
+<li>
+sequence of amino acids.</li>
+</ul>
+The protein entered in the text box presented below. Then, click on the
+Submit button to analyze the protein.
+<center>
+<p><img SRC="dgpi_graphique.gif" height=107 width=385></center>
+
+<p>The result of the analysis by DGPI is presented in graphic form in the
+lower part of the window.
+<br>It is possible to submit several proteins, and then navigate between
+the results using the buttons " Back " and " Forward ".
+<br>&nbsp;
+<br>&nbsp;
+<h3>
+Text mode</h3>
+The text mode makes it possible to analyze proteins in batch mode, which
+makes it possible to integrate DGPI in an automatic data processing sequence
+of proteins. The text mode also has the advantage of allowing the use of
+proteins in FASTA format.
+<p>Syntax for the text mode is the following:
+<p><tt>dgpi [-file=&lt;file_name> [-output=HTML|text]] [-h] [-q]</tt>
+<p>The significance of the options is the following:&nbsp;
+<blockquote><tt>-q&nbsp;&nbsp;&nbsp;&nbsp; </tt>: quiet mode (only error
+messages are displayed)
+<br><tt>-output</tt>: output file format text or HTML (default is HTML)
+<br><tt>-h
+</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : display help
+<br><tt>-file&nbsp; </tt>: tell DGPI which file contains the protein.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The result is stored in
+<tt>&lt;file_name>.html </tt>or<tt> .txt&nbsp;</tt>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if text output is choosed</blockquote>
+
+<p><br>The file specified by the option <tt>-file</tt> can contain a protein
+in various formats:
+<ul>
+<li>
+access number;</li>
+
+<li>
+entry name;</li>
+
+<li>
+sequence of amino acids;</li>
+
+<li>
+protein with FASTA format.</li>
+</ul>
+The FASTA format used in DGPI does not have all the functionalities of
+current format FASTA. The following functionalities are not supported by
+DGPI:
+<ul>
+<li>
+several proteins in a file;</li>
+
+<li>
+nonconventional amino acids (supported: the 20 basic ones, X, B, U and
+Z);</li>
+
+<li>
+the access number of protein must be in the first line of characters 4
+to 10.</li>
+</ul>
+An example of each format accepted by DGPI for the text mode is provided.
+These files are called
+<tt>example_*_format.txt
+</tt>(* replaces an unspecified
+character string).
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr WIDTH="100%">
+<table COLS=2 WIDTH="100%" >
+<tr>
+<td><font size=-2>Manual DGPI v2.04 User manual</font>
+<br><font size=-2>http://dgpi.pathbot.com/</font>
+<br><font size=-2>email: dgpi@bigfoot.com</font></td>
+
+<td>
+<div align=right><font size=-2>18 august 2000</font></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

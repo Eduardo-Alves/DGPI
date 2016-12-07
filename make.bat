@@ -1,0 +1,2 @@
+javac DGPI.java
+pause
