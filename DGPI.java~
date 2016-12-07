@@ -191,10 +191,12 @@ class DGPI extends Frame implements WindowListener, HyperlinkListener, ActionLis
 	    keepReading = false;
       	    prot.set(sequence);
       	    reponse += getResponse(prot, OUTPUT_TYPE_GFF);  
+    	    System.out.println(reponse);    
 	    }else if((ligne.charAt(0) == '>')){
 		keepReading = false;
       		prot.set(sequence);
       		reponse += getResponse(prot, OUTPUT_TYPE_GFF);  
+    		System.out.println(reponse);    
 		}
 	  }while(keepReading);
        }//end if

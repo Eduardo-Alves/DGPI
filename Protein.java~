@@ -237,5 +237,58 @@ Date   : 2 juillet 2000
     }
 
   }//end is_sequence
+public void read_multiple_from_file(String file_name) {
+    // lit une protéine depuis un fichier. Le fichier peut contenir une liste des protéine sous différents formats :
+    //   o  access number
+    //   o  entry name
+    //   o  séquence
+    //   o  format FASTA
+    //
+    //  Note : le format FASTA n'est pas supporté entièrement. Liste des features non supportées :
+    //           o  acides aminés non conventionnels (supportés : les 20 de base, X, B, U et Z)
+    String result = "";
+    BufferedReader in = null;
+    
+    try {
+      // ouvrir le fichier
+      in = new BufferedReader(new FileReader(file_name));
+
+      // lire la première ligne
+      String ligne = in.readLine();
+      
+      if (ligne.charAt(0)=='>') {
+        // fichier FASTA => on extrait les données de l'entête
+        if (ligne.length()>10) access_number = ligne.substring(4,10); // lire l'access number
+
+        fasta_id=ligne;  //add gff output for multifasta on Dec 7th 2016 by Eduardo Alves      
+        // lire la séquence
+        ligne = in.readLine();
+        String sequence = "";
+        while (ligne!=null) {
+          if (ligne.charAt(0)==';') ligne = in.readLine(); // sauter la ligne si c'est un commentaire
+          sequence += ligne;
+          ligne = in.readLine();
+        }//end while
+        this.sequence = sequence;
+        
+        
+        
+      } else {
+      	// c'est un fichier d'un autre format (access number, entry name ou séquence)
+        while (ligne!=null) {
+          result += ligne;
+          ligne = in.readLine();
+        }//end while
+        // analyse du fichier
+        this.set(result);
+      }//end if
+    }
+    catch (IOException e) {
+      //e.printStackTrace();
+      System.out.println("DGPI error : cannot read file "+file_name);
+      System.exit(-1);
+    }
+  
+  }//end read_file
 
 }//end class
