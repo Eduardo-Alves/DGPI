@@ -21,7 +21,7 @@ Project DGPI (dgpi@bigfoot.com)
 
 
 Work citation for papers : You can cite DGPI in your papers using the following text 
-Julien Kronegg, Didier Buloz, (1999), "Detection/prediction of GPI cleavage site (GPI-anchor) in a protein (DGPI)", Retrieved [retrieve date] from http://129.194.185.165/dgpi/
+Julien Kronegg, Didier Buloz, (1999), "Detection/prediction of GPI cleavage site (GPI-anchor) in a protein (DGPI)", Retrieved 20070709 from http://129.194.185.165/dgpi/
 
 
 LEGAL NOTE (new):
