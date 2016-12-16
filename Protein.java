@@ -157,7 +157,7 @@ Date   : 2 juillet 2000
         // lire la séquence
         ligne = in.readLine();
         String sequence = "";
-        while (ligne!=null) {
+        while ((ligne!=null) && ligne.charAt(0)!='>') {
           if (ligne.charAt(0)==';') ligne = in.readLine(); // sauter la ligne si c'est un commentaire
           sequence += ligne;
           ligne = in.readLine();
